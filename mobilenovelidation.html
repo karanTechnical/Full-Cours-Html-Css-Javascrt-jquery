@@ -1,0 +1,50 @@
+
+<html>
+<head>
+    
+</head>
+<body>
+    
+<script>
+    function myFun(){
+        var a = document.getElementById("moblilenumber").value;
+        if(a==""){
+            document.getElementById("message").innerHTML="*please fill mobile number";
+            return false
+        }
+        if(isNaN(a)){
+            document.getElementById("message").innerHTML="*only number allowed";
+            return false
+            
+        }
+        if(a.length<10){
+            document.getElementById("message").innerHTML="*mobile number must be 10 digits";
+            return false
+        }
+        if(a.length>10){
+            document.getElementById("message").innerHTML="*mobile number must be 10 digits";
+            return false
+
+        }
+        if((a.charAt(0)!=6) && (a.charAt(0)!=0) && (a.charAt(0)!=1)) {
+            document.getElementById("message").innerHTML="*mobile number must start 6,0,1";
+            return false
+
+        }
+    }
+</script>
+
+
+  <h1 style="color: green; text-align: center;"> MOBILE NUMBER VALIDATION IN JVASCRIPT</h1> 
+
+
+       <form onsubmit="return myFun()">
+           <input type="text" id="moblilenumber" value="">
+       <span id="message" style="color: red;"></span><br><br>
+       <input type="submit" value="submit">
+       </form>
+
+   
+
+</body>
+</html>

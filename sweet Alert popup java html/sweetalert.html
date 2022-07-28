@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.all.min.js"></script>
+	<title>Document</title>
+	<style type="text/css">
+		#pop{
+
+			}
+	</style>
+</head>
+<body>
+	<h1 style="color:blue;text-align:center">SWEET ALRET 2 popUp Java button</h1>
+<button onclick="popUp()" id="pop">swal.fire</button><br><br>
+<button onclick="myFun()" id="pop">stillAround</button><br><br>
+<button onclick="myTun()" id="pop">somethingwrong</button><br><br>
+<button onclick="myImg()" id="pop">ImageUrl</button><br><br>
+<button onclick="myText()" id="pop">boldText</button><br><br>
+<button onclick="mySave()" id="pop">Save Change</button><br><br>
+<button onclick="myWork()" id="pop">your work save</button><br><br>
+<button onclick="myAnimate()" id="pop">Animate popup</button><br><br>
+<button onclick="mySure()" id="pop">Are you Sure</button><br><br>
+<button onclick="myCancle()" id="pop">Sure Cancle</button><br><br>
+<button onclick="myImage()" id="pop">Text&Image</button><br><br>
+<button onclick="myPadding()" id="pop">padding backg</button><br><br>
+<button onclick="myAuto()" id="pop">Auto Close Alret</button><br><br>
+<button onclick="myChange()" id="pop">Change nepali Language </button><br><br>
+<button onclick="mylookup()" id="pop">submit your Lookup</button><br><br>
+
+<script type="text/javascript">
+	function popUp(){
+		Swal.fire('Any fool can use a computer');
+	}
+
+	function myFun(){
+		Swal.fire(
+  'The Internet?',
+  'That thing is still around?',
+  'question'
+)
+
+	}
+
+	function myTun(){
+	Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
+	}
+
+	 function myImg(){
+	 	Swal.fire({
+  imageUrl: 'sexi.jpg',
+  imageHeight: 1500,
+  imageAlt: 'A tall image'
+})
+	 }
+
+	 function myText(){
+	 	Swal.fire({
+  title: '<strong>HTML <u>example</u></strong>',
+  icon: 'info',
+  html:
+    'You can use <b>bold text</b>, ' +
+    '<a href="//sweetalert2.github.io">links</a> ' +
+    'and other HTML tags',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
+	 }
+
+	 function mySave(){
+	 	Swal.fire({
+  title: 'Do you want to save the changes?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: `Save`,
+  denyButtonText: `Don't save`,
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Changes are not saved', '', 'info')
+  }
+})
+	 }
+
+	  function myWork(){
+	  	Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+	  }
+	  function myAnimate(){
+	  	Swal.fire({
+  title: 'Custom animation with Animate.css',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+	  }
+	  function mySure(){
+	  	Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Deleted!',
+      'Your file has been deleted.',
+      'success'
+    )
+  }
+})
+	  }
+
+	  function myCancle(){
+	  	const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: false
+})
+
+swalWithBootstrapButtons.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonText: 'Yes, delete it!',
+  cancelButtonText: 'No, cancel!',
+  reverseButtons: true
+}).then((result) => {
+  if (result.isConfirmed) {
+    swalWithBootstrapButtons.fire(
+      'Deleted!',
+      'Your file has been deleted.',
+      'success'
+    )
+  } else if (
+    /* Read more about handling dismissals below */
+    result.dismiss === Swal.DismissReason.cancel
+  ) {
+    swalWithBootstrapButtons.fire(
+      'Cancelled',
+      'Your imaginary file is safe :)',
+      'error'
+    )
+  }
+})
+	  }
+	  function myImage(){
+	  	Swal.fire({
+  title: 'Sweet!',
+  text: 'Modal with a custom image.',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+	  }
+
+	  function myPadding(){
+	  	Swal.fire({
+  title: 'Custom width, padding, background.',
+  width: 600,
+  padding: '3em',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+	  }
+	  function myAuto(){
+	  	let timerInterval
+Swal.fire({
+  title: 'Auto close alert!',
+  html: 'I will close in <b></b> milliseconds.',
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    timerInterval = setInterval(() => {
+      const content = Swal.getHtmlContainer()
+      if (content) {
+        const b = content.querySelector('b')
+        if (b) {
+          b.textContent = Swal.getTimerLeft()
+        }
+      }
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+	  }
+
+	  function myChange(){
+	  	Swal.fire({
+  title: 'के तपाईँ निश्चित हुनुहुन्छ',
+  icon: 'प्रश्न',
+  iconHtml:'?' ,
+  confirmButtonText: 'पुष्टि गर्नुहोस्',
+  cancelButtonText:'रद्द गर्नुहोस्' ,
+  showCancelButton: true,
+  showCloseButton: true
+})
+	  }
+
+	  function mylookup(){
+	  	Swal.fire({
+  title: 'Submit your Github username',
+  input: 'text',
+  inputAttributes: {
+    autocapitalize: 'off'
+  },
+  showCancelButton: true,
+  confirmButtonText: 'Look up',
+  showLoaderOnConfirm: true,
+  preConfirm: (login) => {
+    return fetch(`//api.github.com/users/${login}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(response.statusText)
+        }
+        return response.json()
+      })
+      .catch(error => {
+        Swal.showValidationMessage(
+          `Request failed: ${error}`
+        )
+      })
+  },
+  allowOutsideClick: () => !Swal.isLoading()
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire({
+      title: `${result.value.login}'s avatar`,
+      imageUrl: result.value.avatar_url
+    })
+  }
+})
+	  }
+</script>
+	
+</body>
+</html>

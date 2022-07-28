@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+
+	<title>Document</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			text-transform: uppercase;
+			color: blue;
+		}
+		.animatDiv{
+			width: 98px;
+			height: 98px;
+			position: relative;
+			background-color: red;
+			border: 1px solid black;
+		}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> 
+</head>
+<body><br>
+	<h1>jquery animate method()</h1>
+	<h2>the animate() method performs a custom animatation of a set of css propertis</h2>
+	<button id="btnClick">ShowAnimate</button><br><br>
+
+      <div class="animatDiv"></div>
+
+      <script>
+      	$(document).ready(function(){
+      		$('#btnClick').click(function(){
+      			$('.animatDiv').animate({
+      				left:500,
+      				width:98/2,
+      				height:98/2
+      				
+      				
+      			});
+      			$('.animatDiv').animate({
+      				top:200
+      				
+      			});
+      			$('.animatDiv').animate({
+      				top:200,
+      				left:0
+      			});
+      			$('.animatDiv').animate({
+      				
+      				left:0,
+      				top:0,
+      				width:98,
+      				height:98
+      				
+      			});
+
+      		});
+      	});
+      
+      </script>
+	
+</body>
+</html>

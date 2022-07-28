@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<title>Document</title>
+
+	<style type="text/css">
+.centerdiv{
+	width: 500px;
+	height: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+#firstdiv{
+	width: 200px;
+	height: 100px;
+	background-color: red;
+}
+#firstdiv2{
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+}
+#firstdiv3{
+	width: 200px;
+	height: 100px;
+	background-color: green;
+}
+		
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center; color:blue">Width Jquery fadeOut fadeIn  for visiblty</h1>
+	<div class="centerdiv">
+		<!-- <button id="fadeOut"> FadeOut</button>
+		<button id="fadeIn">FadeIn</button> -->
+		<button id="btnfade">fadeToggle</button>
+		<hr>
+		<div id="firstdiv"></div><br>
+		<div id="firstdiv2"></div><br>
+		<div id="firstdiv3"></div><br>
+		
+	</div>
+
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	// $('#fadeOut').click(function(){
+	    	// 	$('#firstdiv').fadeOut('slow');
+	    	// 	$('#firstdiv2').fadeOut(3000);
+	    	// 	$('#firstdiv3').fadeOut('');
+	    	// });
+	    	// $('#fadeIn').click(function(){
+	    	// 	$('#firstdiv').fadeIn('slow');
+	    	// 	$('#firstdiv2').fadeIn(3000);
+	    	// 	$('#firstdiv3').fadeIn('');
+	    	// });
+	    	$('#btnfade').click(function(){
+	    		$('#firstdiv').fadeToggle();
+	    		$('#firstdiv2').fadeToggle('slow');
+	    		$('#firstdiv3').fadeToggle(3000);
+	    	})
+	    	
+	    });
+
+	</script>
+</body>
+</html>

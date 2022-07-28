@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="apiArgentena"></p>
+	<script type="text/javascript">
+
+		//................................//Advace Java Script /////................../////
+
+		////...function Hosting..declare...//
+		// sum(5,10);
+		// function sum(a,b){
+		// 	add = a+b;
+		// 	console.log(add);    //// this corrct ans//
+		// }
+
+		
+///////////////////////////////////////////////////////////
+		// Hosting Exciese.......//
+         
+          
+		 // function sum(a,b){
+		 // 	add = a+b;
+		 // 	console.log(add); //// this corrct ans//
+		 // }
+		 // sum(5,10);
+//////////////////////////////////////////////////////////////
+		 ///declare functinon practical..//
+
+		 //  sum(5,10);
+		 // var sum = function sum(a,b){ ///type error sum is not define.//
+			// add = a+b;
+		 // 	console.log(add);
+		 // }
+///////////////////////////////////////////////////////////////
+
+		 // var sum = function sum(a,b){ ///this is correct //
+			// add = a+b;
+		 // 	console.log(add);
+		 // }
+		 // sum(5,10);
+		// console.log(sum);//
+
+/////////////////////////////////////////////////////
+          
+          // const ecma script function.////
+
+   //        const sum = (a,b)=>{ ///const ecma function//
+			// add = a+b;
+		 // 	console.log(add);
+		 // }
+		 // sum(5,10);
+
+		 ///end function Hostion///
+///////////////////////////////////////////
+
+		 //// start Varibale Hosting........////
+
+///////////////////////////////////
+		 // var a;
+		 // console.log(a);  ///undefined value not set//
+///////////////////////////////////
+		 // var a;
+		 // a = 10;
+		 // console.log(a); ///varibale declare a = 10 //
+//////////////////////////////////
+		 // var a = 10;
+		 // console.log(a); ///varibale declare a = 10 //
+///////////////////////////////////////
+		// console.log(a);
+		// var a = 10;     ///undefined value var after console//
+/////////////////////////////////////////////////////////////////////////////////
+		//Hosting  declare console up down call// 
+		// var a = undefined;//a = undefined;
+		// console.log(a);
+		// a = 10;
+/////////////////////////////////////////////
+		// var a;           //var a = 10;// a value function check a=10 define//
+		// a = 10;
+		// console.log(a);
+///////////////////////////////////////////
+		// var a = 10;
+		// var a = 20;
+		// console.log(a); // var a = 20/ //
+///////////////////////////////////////////////////////////
+		// var a = 10;
+		// console.log(a); // var a = 10 ///
+		// var a = 20;
+//////////////////////////////////////////
+  //        console.log(b);
+		// let b = 30;    /////////Cannot access 'b' before initialization//  ///only use var function//
+////////////////////////////////////////////////////
+		// console.log(b);
+		// const b = 30; /////////Cannot access 'b' before initialization//   ///only use  var function//
+
+  /////////////////    ////////////////////   /////////////////////////     //////  //      ..................////......// 
+
+		// console.log("i am a "+ job);  /// iam a undefine//   // first scope is store undefine;//
+		// var job = "web Devloper";
+		// console.log("i am a "+ job); ///iam web devloper///
+
+		// function whoAmi(){
+		// 	console.log("i am a "+job); // iam a undefine// first scope is store undefine;//
+		// 	var job = "full Stack";
+		// 	console.log("i am a "+ job); //iam fullstack///
+		// }
+		// whoAmi();
+
+
+		/////////..........Scope Chain.......////...........//////
+
+		// var a = "hello guys.. "; /// a = Global Scope access//
+		// function first(){
+		// 	var b = "How are you? ";
+		// 	second();
+
+		// 	function second(){
+		// 		var c = " myself KaranChaudhary";
+		// 		console.log(a+b+c);
+		// 	}
+		// }
+		// first();
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+		// var a = "hello guys.. "; /// a = Global Scope access//
+		// function first(){
+		// 	var b = "How are you? ";
+		// 	second();
+
+		// 	function second(){
+		// 		var c = " myself KaranChaudhary";
+		// 		console.log(a+b+c);
+		// 		three();
+		// 	}
+		// }
+		// // function three(){
+		// // 	var d = " please  Share and Scribe and like my chanel"; /// b,c is not define.;//
+		// // 	console.log(a+b+c+d);
+		// // }
+		// function three(){
+		// 	var d = " please  Share and Scribe and like my chanel"; ///a and d is define .hello guys plese share andld....//
+		// 	console.log(a+d);
+		// }
+		// first();
+
+
+		//...................Use Strick Advance java.....///////////////////////////////////
+
+		  // function sum(a,b){
+		  // 	console.log(add);  ///add is not defined;//
+		  // 	add = a+b;
+		  // 	console.log(add);
+		  // }
+		  // sum(10,10);
+///////////////////////////////////////////////////////////////
+		  //  function sum(a,b){
+		  // 	console.log(add);  ///undefine; 20//
+		  // 	var add = a+b;
+		  // 	console.log(add);
+		  // }
+		  // sum(10,10);
+
+////////////////////////////////////////////////////////////////
+		  //  function sum(a,b){  /// 20 ///
+		  // 	add = a+b;
+		  // 	console.log(add);
+		  // }
+		  // sum(10,10);
+ //////////////////////////////////////////////////////////////            
+    //             "use strict"
+    //           function sum(a,b){  //add is not defined//
+		  // 	add = a+b;
+		  // 	console.log(add);  ///use strick error Msg//
+		  // }
+		  // sum(10,10);
+///////////////////////////////////////////////////
+    //        "use strict"
+		  // function sum(a,b){  /// 20 ///
+		  // 	 var add = a+b;
+		  // 	console.log(add);
+		  //  }
+		  //  sum(10,10);
+//////////////////////////////////////////
+           
+		  // function sum(a,a){  
+		  // 	 add = a+20;
+		  // 	console.log(add);   //30//
+		  //  }
+		  //  sum(10,10);
+//////////////////////////////////////////////
+     //         "use strict"
+		   // function sum(a,a){  
+		  	//  add = a+20;
+		  	// console.log(add);   //use strict show Error Msg  Duplicate parameter name not allowed in this context//
+		   // }
+		   // sum(10,10);
+
+
+     ////...............................What is   'this'     Keybord in JavaScript../////
+
+     // console.log(this);  /// this refrer window object;////
+
+       // function sum(){
+       // 	var add = 2+2;
+       // 	console.log("sum of two no. is "+add);  //sum of two no. is 4//
+       // 	console.log(this);  /// this refrer window object; {window: Window, self: Window, document: document, name:} ///
+       // }
+       // sum();  
+
+///////////////////////////////////////////////
+       // const thapa = {
+       // 	name : "vinod thapa",
+       // 	qualif : "MCS",
+
+       // 	sum: function(){
+       // 		var add = 2+2;
+       // 		console.log("sum of two no. "+add);  // sum of two no. 4 //
+
+       // 		console.log(this.name);  // vinod thapa //
+
+       // 		console.log(this);     //{name: 'vinod thapa', qualif: 'MCS', sum: ƒ}//////
+       // 	}
+
+       // }
+       // thapa.sum();
+
+
+    ///////////////////////////////////////////////     
+       // const thapa = {
+       // 	name : "vinod thapa",
+       // 	qualif : "MCS",
+
+       // 	sum: function(){
+       // 		var add = 2+2;
+       // 		console.log("sum of two no. "+add);  // sum of two no. 4 //
+
+       // 		console.log(this.name);  // vinod thapa //
+
+       // 		console.log(this);     //{name: 'vinod thapa', qualif: 'MCS', sum: ƒ}//////
+       // 	}
+
+       // }
+       // thapa.sum();
+
+//////////////////////////
+
+       //  "use strict"
+       // function sum(){
+       // 	var add = 2+2;
+       // 	console.log("sum of two no. "+add);  // sum of two no. 4 //
+
+       // 	console.log(this);  ///undefined//
+	      //  	}
+	      //  	sum();
+
+	      //////////////////////////------------------------------------------------>
+
+       //   const thapa = { name : "vinod thapa",
+       // 	qualif : "MCS",
+       	
+       // 	sum: function(){
+
+       // 		console.log(this.name); 
+       // 		var add = 2+2;
+       // 		console.log("sum of two no. "+add);
+
+       // 		console.log(this);   ///{name: 'vinod thapa', qualif: 'MCS', sum: ƒ} //
+
+       // 		function child(){
+       // 			var name = "thapa";
+       // 			console.log("child method name: "+name);  //////child method name: thapa ///
+       // 			console.log(this);  ///  {Windo{window: Window, self: Window, document: document, name: }//////
+       // 		}  
+       // 		child();
+       // 	}
+
+       // }
+       // thapa.sum();
+
+ ////////////////    /////////  array and object  //////////////////////////------------------------------------------------>
+
+ // const array = [1,2,3];
+ // console.log(array);
+
+ // const arrobj = {
+ // 	0:1,
+ // 	1:2,
+ // 	2:3
+ // }
+ // console.log(arrobj);
+ // console.log(typeof(array));
+ //  // console.log(Array.isArray(arrobj));
+ //  console.log(Array.isArray(array));
+
+
+  ////////////////    /////////  pass by values vs by reference  //////////////////////////----------------------------->
+
+
+// let a = 5;           /////a value is 5;  b value = 5;
+// let b = a;
+
+// b = b+5;               ///b = 10;            pass by values 
+// console.log(a);
+// console.log(b);
+
+
+// refernce type............
+
+
+// const obj1 ={
+// 	user: "karan",
+// 	pass: "password"
+// }
+// const obj2 = obj1;
+
+// obj2.pass = "anything";
+
+// console.log(obj1);
+// console.log(obj2);
+
+
+// const array1 = [1,2,3,4];
+
+// const array2 = [].concat(array1);
+
+// array2.push(5);
+
+// console.log(array1);
+// console.log(array2);
+
+
+/////////////////////////////////////////////.......//////////////////////////////
+
+// let likes = 100;
+// const youtube = {
+// 	name: "karanTechnical",
+// 	subscribes : 98000
+// }
+
+// const karan = (a,b) => {
+// 	a = 200;
+// 	console.log(a);
+// 	b.subscribes = 10000;
+
+// }
+
+// karan(likes,youtube);
+// console.log(likes);
+// console.log(youtube.subscribes);
+
+
+///////////////////.....function id first class citizens...............................///////////////
+
+
+// const thankyou = function(){
+// 	console.log("thankyou so much for love support");
+// }
+// thankyou();
+
+/////////////////////////////////
+// const youtube = {
+// 	name: "karanTechnical",
+// 	qualif: function(){
+// 		console.log(" i did BCS and MCS");
+// 	}
+// }
+
+// youtube.qualif();
+/////////////////////////////////////////
+
+// const myName = ()=>{
+// 	return "hello";
+// }
+//  const greeting = (sayHi,name)=>{
+//  	console.log(sayHi() +" "+ name);
+
+//  }
+//  greeting(myName,"karanTechnical")
+
+//////////////////////retutning function //////////////////////////////
+
+// function a (){
+// 	return function b(){
+// 		console.log("thank you for supportion in my chanel");
+
+// 	}
+// }
+//    ///// a()();
+
+//  const c = a();
+//  c();
+
+///////////////////Calback Function /////////////////////////////////////////////////
+
+// const funA = ()=>{
+
+
+// 	setTimeout(function(){
+// 		console.log(`welcome funA`);
+//          funB();
+// 	},3000);
+	
+// }
+// const funB = ()=>{
+// 	console.log(`welcome funB`);
+// }
+
+// funA();
+
+///////////////////////////
+//  const perOne = (friend,fallfriend)=>{
+//  	console.log(`iam a busy right now. iam talking to ${friend}.i will call you back`);
+//  	fallfriend();
+//  }
+
+//  const perTwo = ()=>{
+//  	console.log(`hey whats up. i call back you dekha.`);
+//  }
+
+
+// perOne("karan",perTwo);
+//////////////////////////////////Anonymous function" ///////////////////////////////////
+
+// document.addEventListener('click',function (){
+// 	console.log("thank you for 1 lakh subscribes");
+// })
+
+// let sum = function(a,b){
+// 	let add = a+b;
+// 	console.log(add);
+
+// }
+
+// sum(5,5);
+
+///////////////////////////////// Higher order Function //////////////////////////////////////////////////////
+
+// const interviewwqus = (name)=>{
+// 	if(name === "karan"){
+// 		return  function(topic){
+// 			console.log(`Hii ${name}.what is ${topic}?.please explan us`);
+// 		}
+// 	}if(name === "chaudhary"){
+// 		return  function(topic){
+// 			console.log(`Hii ${name}.what is ${topic}?.please explan us`);
+// 		}
+// 	}if(name === "bro"){
+// 		return  function(topic){
+// 			console.log(`Hii ${name}.what is ${topic}?.please explan us`);
+// 		}
+// 	}else{
+// 		return function(){
+// 			console.log("welcome to interview.")
+// 		}
+// 	}
+// }
+
+
+// // interviewwqus("karan")("UI");
+// // interviewwqus("chaudhary")("FulStack Devloper");
+// // interviewwqus("bro")("frant Developer");
+
+
+// ///////////////
+//  const  cand1 = interviewwqus("karan");
+
+//  cand1("UI");
+//  cand1("Ux");
+//  cand1("CSS");
+//  cand1("JavaScript");
+
+////////////////////////////--immediately invoked function expression -IIFE-/////////////////////////////
+
+// function authorName(){
+
+// 	console.log('author name is KaranChaudhary');
+// }
+
+// authorName();
+////////////////////
+
+// (function(aName){
+	
+ 
+//  	console.log('author name is '+ aName);
+// }) ("karan");
+
+//////////////////////////////////////////-------closure in javaScript--///////////////////////////
+
+// const outFun = (a)=>{
+// 	let b = 10;
+// 	const innerFun = () =>{
+// 		let sum = a+b;
+// 		console.log(`the sum of two number is ${sum}.`)
+// 	}
+// 	return innerFun;
+// }
+// 	let inner =	outFun(5);
+
+// 	console.dir(inner);
+
+//    inner();
+
+   //////////////////////////////////////////-------closure excises in javaScript--///////////////////////////
+
+        
+
+   // const interviewq = (name)=>{
+   // 	return function(topic){
+   // 		if(name === "karan"){
+   // 			console.log(`Hi, ${name}. please explan what is ${topic}.`);
+   // 		}
+   // 		else if(name === "vinod"){
+   // 			console.log(`Hi, ${name}. please explan what is ${topic}.`);
+   // 		}
+   // 		else if(name === "janson"){
+   // 			console.log(`Hi, ${name}. please explan what is ${topic}.`);
+   // 		}else{
+   // 			console.log("Welcome to TT company.")
+   // 		}
+   // 	}
+
+   // }
+
+    // const candadite = interviewq("karan");
+
+    // candadite('UI');
+
+    // const candadite2 = interviewq("vinod");
+
+    // candadite('ReactJs');
+
+    // ..........same code but short code ////////
+
+    // interviewq("karan")('UI');
+
+    // interviewq("vinod")('ReactJs');
+    // interviewq("janson")('HTML');
+
+     ///////////////////////////-------Call() Method in javaScript--///////////////////////////
+
+//      const youtuber1 = {
+//      	name:"KatanTechnical",
+//      	content: "programing",
+//      	feature: function(rating,support){
+//      		console.log(`very friendly way of teaching. ${this.name} is my fav ${this.content} chanel.i will love giv ${rating} star. please ${support} ${this.name} chanel.`)
+//      	}
+//      }
+//      // youtuber1.feature(5,"subscribe");
+
+// const youtuber2 = {
+// 	name:"vinod",
+// 	content: "programing&Blog"
+// }
+// youtuber1.feature.call(youtuber2,5,"subscribe");
+
+
+     ///////////////////////////-------Apply() Method in javaScript--///////////////////////////
+
+
+//       const youtuber1 = {
+//      	name:"KatanTechnical",
+//      	content: "programing",
+//      	feature: function(rating,support){
+//      		console.log(`very friendly way of teaching. ${this.name} is my fav ${this.content} chanel.i will love giv ${rating} star. please ${support} ${this.name} chanel.`)
+//      	}
+//      }
+//      // youtuber1.feature(5,"subscribe");
+
+// const youtuber2 = {
+// 	name:"vinod",
+// 	content: "programing&Blog"
+// }
+// // youtuber1.feature.call(youtuber2,5,"subscribe");  //call method //
+
+// youtuber1.feature.apply(youtuber2,[5,"subscribe"]);   /// apply method//
+
+//  let max = Math.max(1,2,3);
+//  console.log(max);
+
+//  let arry = Math.max.apply(null,[1,2,3,4,5,6]);
+//  console.log(arry);
+
+      ///////////////////////////-------Bind() Method in javaScript--///////////////////////////
+
+      // const youtuber = {
+      // 	name: "karanTechinacal",
+      // 	content:"programing",
+      // 	feature:function(){
+      // 		console.log(`may fav youtuber name is ${this.name}. he made vedios on ${this.content} topic.`);
+
+      // 	}
+
+      // }
+      // // youtuber.feature();
+      // let youtuberFun = youtuber.feature;
+
+      // youtuberFun();
+
+      // let youtuberFun2 = youtuber.feature.bind(youtuber);
+
+      // youtuberFun2();
+
+      //........... same code new method..////
+
+      // const youtuber = {
+      // 	name: "karanTechinacal",
+      // 	content:"programing"
+      // }
+      // const youtuber1 = {
+      // 	name: "karanTechinacal1",
+      // 	content:"programing1"
+      // }
+      // const youtuber2 = {
+      // 	name: "karanTechinacal2",
+      // 	content:"programing2"
+      // }
+
+      // function feature(rating){
+      // 		console.log(`may fav youtuber name is ${this.name}. he made vedios on ${this.content} topic.i will love to giv ${rating} star `);
+
+      // 	}
+      //   let you1 =   feature.bind(youtuber1);
+      //   you1(5);
+
+      //   let you2 =   feature.bind(youtuber2);
+      //   you2(4);
+
+      	// feature();
+
+///////////////////////// ForEach() method////////////////////////////////////////////////
+
+
+// const myFavProg = ['javascript', 'php', 'c', 'python'];
+// console.log(myFavProg[0]);
+
+// for (let x=0; x<myFavProg.length; x++){
+// 	console.log(myFavProg[x]);
+// }
+/////////////same code....//
+// myFavProg.forEach(function(currValue){
+// 	console.log(currValue);
+// })
+////////// .....
+// myFavProg.forEach(function(arrValue, index){
+// 	console.log(index +"-- "+arrValue);
+// })
+///////////////.....
+// const newArr = [10,20,30,40,50];
+// newArr.forEach(function(value,ind,arr){
+// 	// console.log(arr)
+// 	console.log(arr[ind]+100);
+// })
+
+///////////////////////////////////////////////for of loop ////////////////////////////////
+
+  // const myFavProg = ['javascript', 'php', 'c', 'python'];
+
+  // for(items of myFavProg){
+  // 	console.log(items);
+  // }
+
+  ///////////////////////////////////////////////for in loop ////////////////////////////////
+
+  // const biaData = {
+  // 	name : "vinod",
+  // 	age : 26,
+  // 	deg : "MCS"
+  // }
+
+  // for  (prop in biaData ){
+  // 	console.log(prop)
+  // }
+
+    /////////////////////////////////////////////Asyncgronus vs synchronous programing/////
+
+
+        // synchronous
+  //    const fun2 = ()=>{
+
+  //    	console.log('fun2 is starting');
+
+  //    }
+
+  //   const func1 = ()=>{
+  //   	console.log('fun1 is starting');
+
+  //   	fun2();
+  //     console.log('fun1 is ending');
+
+
+  //   }
+  // func1();
+
+
+// Asyncronus
+  //  const fun2 = ()=>{
+
+  //    	setTimeout( ()=>{
+
+  //   	console.log('fun2 is starting');
+
+  //    	},3000);
+
+  //    }
+
+  //   const func1 = ()=>{
+  //   	console.log('fun1 is starting');
+
+  //   	fun2();
+  //     console.log('fun1 is ending');
+
+
+  //   }
+  // func1();
+
+  /// THE EVENT LOOP IN JS/// Asyncronus//////////////////////////////////////////////
+
+  /// CALL BACK HELL JAVASCRIPT//////////////////////////////////////////////
+
+ // const getRollNo = ()=>{
+ // 	setTimeout(()=>{
+ // 		console.log('API getting Roll no.');
+ // 		let roll_no = [1,2,3,4,5];
+ // 		console.log(roll_no);
+
+ // 		setTimeout((rollno)=>{
+ // 			const biodata = {
+ // 				name:'karan',
+ // 				age : 25
+ // 			}
+ // 			console.log(`my roll nummar is ${rollno} my name is ${biodata.name} and iam ${biodata.age} years old`);
+
+ // 			setTimeout((name)=>{
+ // 				biodata.gender = 'male';
+ // 				console.log(`my roll nummar is ${rollno} my name is ${biodata.name} and iam ${biodata.age} years old i am alpha ${biodata.gender}`);
+
+
+ // 			},2000,biodata.name);
+
+
+ // 		},2000,roll_no[1])
+
+ // 	},2000)
+
+ // }
+
+ // getRollNo();
+
+
+  /// CALL promise 3 stage//////////////////////////////////////////////
+
+ // const pobj1 = new Promise((resolve,reject)=>{
+ // 	setTimeout(()=>{
+         
+ //         let roll_no = [1,2,3,4,5];
+ //         resolve(roll_no);
+ //         // reject('Error while communicating');
+ // 	},2000);
+
+ // });
+
+ // const getBiodata = (indexdata)=>{
+ // 	return new Promise((resolve,reject)=>{
+ // 		setTimeout((indexdata)=>{
+ // 			let biodata = {
+ // 				name:"karan",
+ // 				age: 26
+ // 			}
+ //         resolve(`my roll no is  ${indexdata}. my name is ${biodata.name} and i am ${biodata.age} years old.`);
+ // 		},2000,indexdata);
+
+ // 	})
+ // }
+
+ // pobj1.then((rollno)=>{
+ // 	console.log(rollno);
+ // 	return getBiodata(rollno[1]);
+ 		
+ // 	}).then((kuchbi)=>{
+ // 		console.log(kuchbi);
+
+ //  }).catch((error)=>{
+ // 	console.log(error);
+
+ // });
+
+   /// Async/ Await//////////////////////////////////////////////
+
+ //    const pobj1 = new Promise((resolve,reject)=>{
+ // 	setTimeout(()=>{
+         
+ //         let roll_no = [1,2,3,4,5];
+ //         resolve(roll_no);
+ //         // reject('Error while communicating');
+ // 	},2000);
+
+ // });
+
+ // const getBiodata = (indexdata)=>{
+ // 	return new Promise((resolve,reject)=>{
+ // 		setTimeout((indexdata)=>{
+ // 			let biodata = {
+ // 				name:"karan",
+ // 				age: 26
+ // 			}
+ //         resolve(`my roll no is  ${indexdata}. my name is ${biodata.name} and i am ${biodata.age} years old.`);
+ // 		},2000,indexdata);
+
+ // 	})
+ // }
+
+ // pobj1.then((rollno)=>{
+ // 	console.log(rollno);
+ // 	return getBiodata(rollno[1]);
+ 		
+ // 	}).then((kuchbi)=>{
+ // 		console.log(kuchbi);
+
+ //  }).catch((error)=>{
+ // 	console.log(error);
+
+ // });
+
+///////////////////////
+
+//   async function getData(){
+//   const rolnodata = await	pobj1;
+//   console.log(rolnodata);
+//  const biodatas = await getBiodata([1]);
+//  console.log(biodatas);
+
+//  return biodatas;
+ 
+
+
+// }
+// const getname = getData().then((myname)=>{
+// 	 console.log(myname);
+// });
+
+
+ //same///// Error Handling in JavaScript//////////////////////////////////////////////
+
+
+
+//  async function getData(){
+
+//  	try{
+
+//   const rolnodata = await	pobj1;
+//   console.log(rolnodata);
+//   const biodatas = await getBiodata([1]);
+//   console.log(bio0datas);
+
+//  return biodatas;
+ 
+
+
+// }catch(error){
+//  // console.log(`the error: ${error}`);
+
+//  alert(`the error: ${error}`);
+//  	}
+// }
+  
+// const getname = getData().then((myname)=>{
+// 	 console.log(myname);
+// });
+
+
+////////////////////Fetch Api.///////////////////////////
+ 
+
+
+// fetch('https://api.covid19api.com/summary').then((apidata)=>{
+// 	// console.log(apidata);
+// 	return apidata.json();
+
+// }).then((actualdata)=>{
+
+// 	// console.log(actualdata);
+// 	const mydata =actualdata.Countries[6];
+// 	document.getElementById('apiArgentena').innerHTML = `the name of the cuntry is ${mydata.Country}. the total confirm case is ${mydata.TotalConfirmed} and total Death case ${mydata.TotalDeaths} total recover cases ${mydata.TotalRecovered}`;
+
+
+// }).catch((error)=>{
+// 	console.log(error);
+
+// });
+
+////////////////////////////// fetch async /////////////////
+//////////////////////fetch api error hendaling//////////////
+
+// async function  getCovidata(){
+
+// 	try{
+// 		const jsondata = await fetch('https://api.covid19api.com/summary');
+
+	
+
+// 	const jsdata = await jsondata.json();
+// 	// console.log(jsdata.Countries[104]);
+// 	const country_name = jsdata.Countries[104];
+
+// 	console.log( `the name of the cuntry is ${country_name.Country}. the total confirm case is ${country_name.TotalConfirmed} and total Death case ${country_name.TotalDeaths} total recover cases ${country_name.TotalRecovered}`);
+
+
+// 	}catch(error){
+// 		console.log(`the error: ${error}`);
+// 	}
+	
+
+
+// }
+
+// getCovidata()
+
+
+//////////////////////Ree usiblity do not reapt//////////////
+
+
+async function  getCovidata(indexapi){
+
+	try{
+		const jsondata = await fetch('https://api.covid19api.com/summary');
+
+	
+
+	const jsdata = await jsondata.json();
+	// console.log(jsdata.Countries[104]);
+	const country_name = jsdata.Countries[`${indexapi}`];
+
+	console.log( `the name of the cuntry is ${country_name.Country}. the total confirm case is ${country_name.TotalConfirmed} and total Death case ${country_name.TotalDeaths} total recover cases ${country_name.TotalRecovered}`);
+
+
+	}catch(error){
+		console.log(`the error: ${error}`);
+	}
+	
+
+
+}
+
+getCovidata(104);
+getCovidata(105);
+getCovidata(106);
+getCovidata(107);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html> Radio Button Validation in java script
+    <head>
+
+   </head>
+   <body>
+
+    <script>
+
+function myFun(){
+    var a = document.forms.container;
+    for(i=0; i<a.length; i++ ){
+        if(a[i].checked==true)
+        return true;
+    }
+    document.getElementById("message").innerHTML="* plese slect any one"
+    return false;
+
+
+}
+
+
+    </script>
+<h1>Thapa Technical</h1>
+
+<form name="forms" onsubmit=" return myFun()">
+    <input type="radio" name="container" value="LIKE">LIKE
+    <input type="radio" name="container" value="SHARE">SHARE
+    <input type="radio" name="container" value="SUBSCRIBE">SUBSCRIBE
+    <div><p id="message" style="color: red;"></p></div>
+    <input type="submit" value="submit">
+</form>
+
+
+   </body>
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<title></title>
+</head>
+
+<body>
+	<div class="container col-lg-6 m-auto">
+		<h1 class="text-center text-warning">White Space validation Java</h1><br><br>
+
+	<form onsubmit="return whitespacevalidation()" class="form-group">
+		UserName:<input type="text" name="user" id="user" class="form-control"><br><br>
+		Message :<textarea cols="30" rows="3" id="messg"></textarea><br><br>
+
+		<input type="submit" name="submit" value="submit" class="btn btn-success">
+
+
+		
+	</form>
+	</div>
+             <script type="text/javascript">
+
+             	function whitespacevalidation(){
+             		var uservalue = document.getElementById('user').value;
+             		var messagevalue = document.getElementById('messg').value;
+
+             		if(uservalue.replace(/\s/g, "").length <=0){
+             			alert("No white space and empty field are allowed");
+             			return false;
+             		}
+                       if(messagevalue.replace(/\s/g, "").length <=0){
+                       	alert("No white space and empty field are allowed");
+                       	return false;
+                       }
+
+
+             	}
+
+             </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        // let a= 34;
+        // let a= 'thi is me srinng';
+        let a= 45;
+        a= 425+5;
+        console.log(a);
+        
+        function hello(){
+            console.log('hello Karan bro');
+        }
+        let obj ={
+            r:34,
+            m:64,
+            func: function myFun(number){
+                console.log("this is number"+number);
+            }
+        }
+        document.addEventListener("click",function click(){
+            console.log("clicked");
+            // alert("hello");
+           let conf = confirm("are you sure visit this page");
+           console.log(conf);
+        });
+        let arr =[2,3,4,5];
+        console.log(this);
+        // function myFun(number){
+        //         console.log("this is number"+ this);
+        //     }
+        let mobj ={
+            a:this,
+            myFun: function(number){
+                console.log("this is number"+ this);}
+            }
+           mobj.myFun();
+           console.log(mobj.a);
+           setTimeout(()=>{
+               console.log("ok iam conming after 3second")
+           },3000);
+           console.log("mai niche wali script hun");
+      
+    </script>
+    <h1>iam learninig javascript</h1>
+</body>
+</html>

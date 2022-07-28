@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			
+		}
+		main{
+			width: 90%;
+			margin: 50px auto;
+			color: white;
+			display: grid;
+			border: 1px solid black;
+			/* grid-template-rows: 150px 150px; */
+			grid-template-rows: repeat(2,150px);
+			grid-template-columns:repeat(auto-fit,minmax(150px, 1fr));
+			/* grid-template-columns:repeat(auto-fill,minmax(150px, 200px)); */
+			/* grid-template-columns:minmax(150px,200px) repeat(2, 1fr); */
+			/* grid-template-columns:max-content repeat(2, 1fr); */
+			/* grid-template-columns:min-content repeat(2, 1fr); */
+			/* grid-template-columns: 150px 150px 150px; */
+			/* grid-template-columns: 1fr 1fr 1fr; */
+			/* grid-row-gap: 20px;
+			/* grid-column-gap: 20px; */
+			grid-gap: 20px;
+			grid-auto-rows: 150px;
+			/* align-items: stretch; */
+			/* align-items: center;
+			justify-items: center; */
+
+
+ 
+
+		}
+		.div1{
+			background:red ;
+
+
+		}
+		.div2{
+			background:blue ;
+			/* grid-column: 1/-1; */
+
+		}
+		.div3{
+			background:green ;
+
+		}
+		.div4{
+			background:yellow ;
+
+		}
+		.div5{
+			background: orange;
+			/* grid-row-start: 1;
+			grid-row-end: 2; */
+			/* grid-row:1/2 ; */
+			/* grid-column-start: 2; */
+			/* grid-column-end: 4; */
+			/* grid-column-end: 3; */
+			/* grid-column:2/4 ; */
+
+		}
+		.div6{
+			background: black;
+
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="div1">div1
+			please subscribe to my chanel
+		</div>
+		<div class="div2">div2
+			
+		</div>
+		<div class="div3">div3
+			
+		</div>
+		<div class="div4">div4
+			
+		</div>
+		<div class="div5">div5
+			
+		</div>
+		<div class="div6">div6
+			
+		</div>
+	</main>
+</body>
+</html>

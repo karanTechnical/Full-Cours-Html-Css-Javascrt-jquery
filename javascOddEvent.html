@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<h2 class="text-primary text-center">Javascript to find odd or even number</h2>
+	<label class="text-danger ">Enter Number:</label><br>
+	<input type="number" name="" id="oddenven" onkeyup="isChick()" class="form-control col-sm-6">
+	<span id="showmsg"></span>
+
+
+
+
+<script>
+	
+function isChick(){
+	var num = document.getElementById('oddenven').value;
+	// alert(num);
+	if((num % 2) === 0){
+         document.getElementById('showmsg').innerHTML ="hurray ! number " +num+ " is and even number";
+	}
+	else{
+		
+         document.getElementById('showmsg').innerHTML ="Oh NO! number " +num+ " is not a even number";
+	}
+	if(num == ""){
+		 document.getElementById('showmsg').innerHTML = "";
+
+	}
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

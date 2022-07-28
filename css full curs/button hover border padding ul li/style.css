@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a:link{color: red}
+a:visited{color: green}
+a:hover{color: yellow}
+a:active{color: blue;}
+.border{
+	width: 300px;
+	height: 150px;
+	background-color: red;
+	/* border: 5px solid black; */
+	/* border: 5px dashed green; */
+	border: 5px dotted blue;
+	 border-radius: 30px;
+}
+
+.boxmodel{
+	width: 500px;
+	height: 100px;
+	background-color: green;
+
+}
+
+input{
+	/* padding-left: 10px;
+	padding-top: 10px; */
+	padding: 10px;
+
+	/* margin-top: 50px;
+	margin-left: 20px; */
+	margin: 50px;
+}
+p{
+	height: 200px;
+	width: 300px;
+	/* border: 1px solid red; */
+
+	/* overflow: hidden; */
+	/* overflow: auto; this is side scroll bar */
+	overflow:scroll;
+
+}
+
+.father{
+	width: 500px;
+	height: 250px;
+	background-color: red;
+	position: relative;
+}
+
+.child1{
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	position: absolute;
+	left: 0;
+
+}
+.child2{
+	width: 100px;
+	height: 50px;
+	background-color: green;
+	position: absolute;
+	/* z-index: 1; */
+	right: 0;
+	
+}
+.child3{
+	width: 100px;
+	height: 50px;
+	background-color: yellow;
+	position: absolute;
+	/* z-index: 2; */
+	bottom: 0;
+	right: 0;
+	
+}
+.child4{
+	width: 100px;
+	height: 50px;
+	background-color: blue;
+	position: absolute;
+	/* z-index: 5; */
+	bottom: 0;
+}

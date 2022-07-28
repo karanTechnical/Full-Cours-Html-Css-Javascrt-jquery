@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Check Box validation In Javascript</h1>
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   checkbox  <input type="checkbox" name="chk" onclick="return myFun()">
+   <div>
+       <span id="notvalid" style="color: red;"></span>
+   </div>
+
+   <script type="text/javascript">
+  function myFun(){
+      var a = document.getElementsByName('chk');
+      var newvar = 0;
+      var count;
+      for(count=0; count<a.length; count++){
+          if(a[count].checked==true){
+              newvar = newvar + 1;
+          }
+      }
+      if(newvar>=5 ){
+          document.getElementById('notvalid').innerHTML="**please slect only four checkbox thank you"
+          return false;
+      }
+  }
+   </script>
+
+</body>
+</html>

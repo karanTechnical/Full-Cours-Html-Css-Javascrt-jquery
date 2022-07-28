@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+	<title>Document</title>
+
+	<style type="text/css">
+		.form-control{
+			width: 80%;
+			height: calc(2rem + 2px);
+			padding: .375rem .75rem;
+			font-size: 1rem;
+			line-height: 1.5;
+			color: #495057;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid #ced4da;
+			border-radius: .25rem;
+			transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-transform:uppercase; text-align:center;color:blue">enter your biodata</h1>
+	<form>
+		<fieldset >
+			<legend align="center" style="font-size:1.6em">MY BIODATA</legend>
+			Name: <input type="text" size="30" class="form-control" placeholder="UserName:"><br><br>
+
+			Email: <input type="text" size="30" class="form-control" placeholder="abc@bc.com"><br><br>
+
+			D O B: <input type="text" size="30" class="form-control" id="datepicker" ><br><br>
+
+			Date and Time<input type="datetime-local"size="30" class="form-control"><br><br>
+
+			cuntry<input type="text" size="30" class="form-control"value="Nepal (readonly cannot write)" readonly>
+			<input type="submit" value="submit">
+			
+		</fieldset>
+	</form>
+
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#datepicker').datepicker({
+				dateFormat: "dd-mm-yy",
+				changeMonth: true,
+				changeYear: true,
+				// maxDate: '3m',
+				// maxDate: '3w',
+				// maxDate: '3y',
+				// minDate: '-3m',
+				// minDate: '-3y',
+				// minDate: '-3w'
+			});
+
+		})
+	</script>
+	
+</body>
+</html>

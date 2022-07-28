@@ -1,0 +1,133 @@
+
+
+body{
+	text-align: center;
+
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.TextEffect{
+	text-shadow: 2px 2px 2px blue;
+}
+#text_shadow{
+	text-shadow: 2px 2px 2px #6aafce;
+	font-family: chinessFont;
+}
+#word_wrap{
+	word-wrap: break-word;
+	width: 150px;
+	border: 1px solid #ff0000;
+}
+#no_wrap{
+	width: 150px;
+	border: 1px solid #ff0000;
+}
+@font-face {
+	font-family: chinessFont;
+	src: url('go3v2.ttf');
+}
+.batman_runn{
+	width: 100%; height: 100px;
+
+	position: relative;
+}
+.batman_runn img{
+	width: 140px;  height: 120px;
+	position: absolute;
+	left: 0; top: -15px;
+	animation: batmarnrun 6s linear infinite;
+}
+
+@keyframes batmarnrun {
+	from{left: 0}
+	to{left: 85%;}
+	
+}
+/* .......................transiting in css3 transfrom scale ................*/
+.love_class{
+	height: 50px;
+	width: 50px;
+	/* transition-property: width,height; */
+	transition-duration: 1s;
+/* 	transition-timing-function: linear; */
+	transition-property: transform;
+
+}
+.love_class:hover{
+	/* height: 100px;
+	width: 100px; */
+	transform: scale(2,2);
+}
+
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,multiple column in cs.s3 ...........*/
+
+
+.about_para{
+	column-count: 3;
+	column-gap: 50px;
+	text-align: justify;
+	/* column-rule: solid; */
+	column-rule: dashed;
+	column-rule-color: gray;
+}
+.mybg_css{
+	width: 300px;
+	height: 300px;
+	background-image: url('dbuctc2-7cb161c3-6f4e-4f95-b844-0735f4bb961b.png'); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: 2px solid gray;
+	border-radius: 10px;
+	box-shadow: 4px 4px 5px 4px gray;
+
+
+}
+
+
+.box_sizing{
+	width: 300px;
+	height: 100px;
+	background: black;
+	margin: auto;
+/* 	padding-left: 30px; */
+
+	box-sizing: border-box;
+/* <!-- -------------------------------3d translate transfrom csss3-------- --> */
+}
+.boxsizingP{
+	color: white;
+	/* transform: translateX( 50px); */
+	transform: translateY(50px);
+}
+.text_rotet{
+	text-shadow: 2px 2px 2px blue;
+	transition:transform 2s ;
+}
+
+.text_rotet:hover{
+ transform: rotate(360deg);
+}
+
+/* <!-- -------------------------------linear Gradinet csss3-------- --> */
+
+.linerGradient{
+	background-image: linear-gradient(to left ,purple,blue);
+
+}
+/* <!-- -------------------------------flex box use csss3-------- --> */
+.flex_css{
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(to left, #f650fe, #607bf5);
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
+
+}
